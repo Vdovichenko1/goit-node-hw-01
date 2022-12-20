@@ -1,0 +1,37 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+#Junk
+.vscode/
+.idea/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.a
+# АЛЕ відстежувати файл lib.a, незважаючи на те, що ми ігноруємо всі файли .a за допомогою попереднього правила
+!lib.a
+# ігнорувати тільки файл TODO, що знаходиться в кореневому каталозі, не відноситься до файлів виду subdir/TODO
+/TODO
+# ігнорувати doc/notes.txt, але не doc/server/arch.txt
+doc/*.txt
+# ігнорувати всі .txt файли в каталозі doc/
+doc/**/*.txt
